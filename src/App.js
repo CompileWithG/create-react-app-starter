@@ -40,7 +40,7 @@ const lengthWithoutSpaces = strWithoutSpaces.length;
     <>
       <div className="bg-gray-400/70">
         <div className="h-5">
-          <Header open={open}setOpen={setOpen}/>
+          <Header textareaValue={textareaValue} open={open}setOpen={setOpen}/>
         </div>
         <div className=" w-full  mt-28 mb-10 overflow-auto h-64">
           <div className="grid m-10  justify-center h-5 w-auto">

@@ -2,14 +2,14 @@
 import Menu from "./Menu";
 import MenuIcon from "./MenuIcon";
 
-export default function Header({open,setOpen}) {
+export default function Header({open,setOpen,textareaValue}) {
   const changeOpen=()=>{
 
     setOpen(()=>!open)
   }
   return (
     <div className="h-15 ">
-      {open&&<Menu/>}
+      {open&&<Menu textareaValue/>}
       <div className="bg-slate-200 "onClick={changeOpen}>
         <MenuIcon />
         </div>
