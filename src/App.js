@@ -59,14 +59,14 @@ const lengthWithoutSpaces = strWithoutSpaces.length;
             <Message  showTime={showTime}key={index} text={message} />
           ))}
         </div>
-        <div className="bg-white h-52 ">
+        <div className="bg-white h-10 ">
           <input
             placeholder="Type your message..."
-            className="input bg-white px-5  h-20 text-lg w-5/6"
+            className="input bg-white px-5  h-10 text-lg w-5/6"
             value={textareaValue} onKeyDown={handleKeyDown}
             onChange={(e) => setTextareaValue(e.target.value)}
           />
-          <div className=" flex  align-top justify-end">
+          <div className=" flex  align-top justify-end h-10">
             <button
               className=" bg-white hover:cursor-pointer h-20 w-1/6"
               onClick={handleButtonClick}
