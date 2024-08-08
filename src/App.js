@@ -4,6 +4,7 @@ import Message from "./components/Message";
 import Send from "./components/Send";
 
 function App() {
+  document.body.style.backgroundColor = "white";
   const date = new Date();
   var x ="";
   if(date.getMinutes()<10){
@@ -58,16 +59,16 @@ const lengthWithoutSpaces = strWithoutSpaces.length;
             <Message  showTime={showTime}key={index} text={message} />
           ))}
         </div>
-        <div className="bg-slate-100 h-52 ">
+        <div className="bg-white h-52 ">
           <input
             placeholder="Type your message..."
-            className="input bg-slate-100 border-stone-500 px-5  h-20 text-lg w-5/6"
+            className="input bg-white px-5  h-20 text-lg w-5/6"
             value={textareaValue} onKeyDown={handleKeyDown}
             onChange={(e) => setTextareaValue(e.target.value)}
           />
           <div className=" flex  align-top justify-end">
             <button
-              className=" bg-slate-100 hover:cursor-pointer h-20 w-1/6"
+              className=" bg-white hover:cursor-pointer h-20 w-1/6"
               onClick={handleButtonClick}
             >
               <Send />
